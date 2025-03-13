@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <div>shelf</div>
+    <div>search</div>
   )
 };
 export default Home;

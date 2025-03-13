@@ -5,7 +5,7 @@ import Home from '@/pages/home';
 // import Detail from '@/pages/detail';
 // import Ranking from '@/pages/ranking';
 import Shelf from '@/pages/shelf';
-// import Search from '@/pages/search';
+import Search from '@/pages/search';
 // import Chapter from '@/pages/chapter';
 // import Booklist from '@/pages/bookList';
 // import Category from '@/pages/category';
@@ -28,10 +28,10 @@ const Router: React.FC = React.memo(() => {
     //   path: '/category',
     //   element: <Category />,
     // },
-    // {
-    //   path: '/search',
-    //   element: <Search />,
-    // },
+    {
+      path: '/search',
+      element: <Search />,
+    },
     // {
     //   path: '/book-list/:key',
     //   element: <Booklist />,
