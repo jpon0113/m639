@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ErrorBlock } from '@/bases';
+import Loading from '@/components/loading';
 import Header from '@/pages/home/components/header';
 import { useRequest } from '@/hooks/useRequest';
 import api from '@/pages/home/api';
@@ -10,16 +11,16 @@ import styles from './index.module.scss';
 const Home: React.FC = () => {
   const { data, error } = useRequest<IHomeData>({ url: api.getHomeData });
   if (error) {
-    return <div>error</div>
+    return <ErrorBlock />
   }
 
   if (!data) {
-    return <div></div>
+    return <Loading />
   }
 
   return (
     <div className={styles.home}>
-      <Header />
+      <Header />      
     </div>
   )
 };
