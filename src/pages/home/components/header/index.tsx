@@ -20,4 +20,6 @@ const Header: React.FC = React.memo(() => {
   )
 });
 
+// Header.displayName = "Header"; // ✅ 添加 displayName
+
 export default Header;

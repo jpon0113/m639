@@ -3,5 +3,6 @@ module.exports = {
   rules: {
     'import/default': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/display-name': 'off',
   },
 };

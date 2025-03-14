@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
 
 const axiosConfig: AxiosRequestConfig = {
-  timeout: 5000,
+  timeout: 30000,
   headers: { 'Content-Type': 'application/json;charset=UTF-8' },
   responseType: 'json',
 };
